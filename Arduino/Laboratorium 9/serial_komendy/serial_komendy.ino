@@ -11,9 +11,10 @@
  * 
  * Użyto pętli 'while' do parsowania komend. Każda komenda winna się kończyć #
  */
-const int D0 = 11;   // LED0 = This port supports PWM!!!
-const int D1 = 10;   // LED1 = This port supports PWM!!!
-const int  BUTTON = 2;    // BUTTON
+#define D0 11     // LED0
+#define D1 10     // LED1
+#define BUTTON 2  // BUTTON
+
 char serial_cmd[15];    // komenda z Serial portu
 char readByte;          // zmienna pomocnicza do zczytywania znaków
 
